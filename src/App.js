@@ -17,8 +17,8 @@ import Navbar from "./components/Navbar";
 const App = () => {
   return (
     <div>
-      <Navbar />
       <Router>
+      <Navbar />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/company-registration" element={<CompanyRegistration />} />
