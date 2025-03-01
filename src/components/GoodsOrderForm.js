@@ -18,7 +18,7 @@ const GoodsOrderForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch("/order", {
+    fetch("/api/order", {
       method: "POST",
       headers: {
         "Content-type": "application/json",

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const ProductBrowsing = () => {
   const [products, setProducts] = useState([]);
-  fetch("/getProducts")
+  fetch("/api/getProducts")
   .then((res) => {
     return res.json()
   })

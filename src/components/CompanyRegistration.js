@@ -18,7 +18,7 @@ const CompanyRegistration = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Company Registered", formData);
-    fetch("/register", {
+    fetch("/api/register", {
       method: "POST",
       headers: {
         "Content-type": "application/json",

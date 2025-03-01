@@ -20,7 +20,7 @@ const ProductRegistration = () => {
     let productData = product
     productData.companyName = sessionStorage.getItem("companyName")
     console.log("Product Registered:", productData);
-    fetch("/registerProduct", {
+    fetch("/api/registerProduct", {
       method: "POST",
       headers: {
         "Content-type": "application/json",

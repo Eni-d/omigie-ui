@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 const Orders = () => {
   const [orders, setOrders] = useState([]);
-    fetch(`/getOrders/${sessionStorage.getItem("companyName")}`)
+    fetch(`/api/getOrders/${sessionStorage.getItem("companyName")}`)
     .then((res) => {
       return res.json()
     })
